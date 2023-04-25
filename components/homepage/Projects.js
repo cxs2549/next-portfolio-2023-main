@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     image: "/assets/projects/twitter.png",
-    link: "https://next-youtube-clone-rho.vercel.app/",
+    link: "https://next-twitter-clone-sandy.vercel.app/",
     technologies: [
       "/assets/technologies/react.png",
       "/assets/technologies/next.png",
