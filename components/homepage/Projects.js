@@ -5,6 +5,16 @@ import Image from "next/image"
 
 const projects = [
   {
+    id: 0,
+    image: "/assets/projects/tiktok.png",
+    link: "https://next-tiktok-clone-zeta.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+    ],
+  },
+  {
     id: 1,
     image: "/assets/projects/twitter.png",
     link: "https://next-twitter-clone-sandy.vercel.app/",
