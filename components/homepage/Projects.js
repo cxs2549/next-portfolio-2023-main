@@ -6,6 +6,16 @@ import Image from "next/image"
 const projects = [
   {
     id: 0,
+    image: "/assets/projects/netflix.png",
+    link: "https://next-tiktok-clone-zeta.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+    ],
+  },
+  {
+    id: 444,
     image: "/assets/projects/tiktok.png",
     link: "https://next-tiktok-clone-zeta.vercel.app/",
     technologies: [
@@ -95,20 +105,20 @@ const Project = ({ link, image, technologies }) => {
         <div className="">
           <Image
             src={image}
-            className="rounded-xl mb-1 h-full w-full border border-gray-100"
+            className="rounded-xl mb-1 h-full w-full border dark:border-neutral-800 border-gray-100"
             alt=""
             width={500}
             height={500}
           />
         </div>
       </Link>
-      <div className="flex items-center justify-between dark:bg-neutral-800 rounded-r-lg border border-gray-100 rounded-lg">
+      <div className="flex items-center justify-between dark:bg-neutral-800 rounded-r-lg border dark:border-neutral-800 border-gray-100 rounded-lg">
         <div className="p-4 items-center gap-3 flex justify-center w-full">
           {technologies.map((tech) => (
             <img
               key={tech.id}
               src={tech}
-              className="w-8 object-contain"
+              className={`w-8 object-contain ${tech.includes("next") && "dark:invert"}`}
               alt=""
             />
           ))}
