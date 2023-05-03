@@ -2,7 +2,7 @@
 import Link from "next/link"
 const Header = () => {
   return (
-    <header className="dark:bg-black">
+    <header className="dark:bg-neutral-900">
       <div className="max-w-6xl p-3 h-[70px] mx-auto flex items-center justify-center">
         <div className="flex items-center justify-between gap-2">
           <Link href={`/`}>
@@ -12,7 +12,7 @@ const Header = () => {
               alt=""
             />
           </Link>
-          <h4 className="text-lg font-bold">cs.dev</h4>
+          <h4 className="text-lg font-bold dark:text-white">cs.dev</h4>
         </div>
       </div>
     </header>
