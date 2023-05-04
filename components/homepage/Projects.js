@@ -6,12 +6,24 @@ import Image from "next/image"
 const projects = [
   {
     id: 0,
+    image: "/assets/projects/spotify.png",
+    link: "https://spotify-clone-khaki-xi.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+      "/assets/technologies/gpt.png",
+    ],
+  },
+  {
+    id: 0,
     image: "/assets/projects/airbnb.png",
     link: "https://airbnb-clone-mu-seven.vercel.app/",
     technologies: [
       "/assets/technologies/react.png",
       "/assets/technologies/next.png",
       "/assets/technologies/tw.png",
+      "/assets/technologies/gpt.png",
     ],
   },
   {
