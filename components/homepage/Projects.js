@@ -6,6 +6,16 @@ import Image from "next/image"
 const projects = [
   {
     id: 0,
+    image: "/assets/projects/expedia.png",
+    link: "https://expedia-clone-lime.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+    ],
+  },
+  {
+    id: 0,
     image: "/assets/projects/spotify.png",
     link: "https://spotify-clone-khaki-xi.vercel.app/",
     technologies: [
