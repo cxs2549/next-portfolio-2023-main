@@ -5,6 +5,16 @@ import Image from "next/image"
 
 const projects = [
   {
+    id: 1,
+    image: "/assets/projects/youtube.png",
+    link: "https://next-youtube-clone-v2.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+    ],
+  },
+  {
     id: 0,
     image: "/assets/projects/expedia.png",
     link: "https://expedia-clone-lime.vercel.app/",
@@ -66,16 +76,7 @@ const projects = [
       "/assets/technologies/tw.png",
     ],
   },
-  {
-    id: 1,
-    image: "/assets/projects/youtube.png",
-    link: "https://next-youtube-clone-rho.vercel.app/",
-    technologies: [
-      "/assets/technologies/react.png",
-      "/assets/technologies/next.png",
-      "/assets/technologies/tw.png",
-    ],
-  },
+
   {
     id: 2,
     image: "/assets/projects/instagram.png",
