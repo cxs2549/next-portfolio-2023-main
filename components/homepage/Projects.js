@@ -1,9 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
-import { AiFillGithub } from "react-icons/ai"
 import Image from "next/image"
 
 const projects = [
+  {
+    id: 1111,
+    image: "/assets/projects/tidal.png",
+    link: "https://next-wave-music.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+    ],
+  },
   {
     id: 1,
     image: "/assets/projects/youtube.png",
@@ -91,8 +100,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="p-4 max-w-6xl mx-auto">
-      <ul className="mt-8 flex flex-wrap gap-4 justify-center gap-y-6">
+    <div className="max-w-6xl p-4 mx-auto">
+      <ul className="flex flex-wrap justify-center gap-4 mt-8 gap-y-6">
         {projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}
@@ -105,20 +114,20 @@ export default Projects
 
 const Project = ({ link, image, technologies }) => {
   return (
-    <li className=" rounded-lg overflow-hidden flex flex-col">
+    <li className="flex flex-col overflow-hidden rounded-lg ">
       <Link href={link} className="overflow-hidden" target="_blank">
-        <div className="rounded-xl overflow-hidden">
+        <div className="overflow-hidden rounded-xl">
           <Image
             src={image}
-            className="rounded-xl mb-1 h-full w-full   object-contain"
+            className="object-contain w-full h-full mb-1 rounded-xl"
             alt=""
             width={500}
             height={500}
           />
         </div>
       </Link>
-      <div className="flex items-center justify-between  rounded-r-lg  rounded-lg">
-        <div className="p-4 items-center gap-3 flex justify-center w-full">
+      <div className="flex items-center justify-between rounded-lg rounded-r-lg">
+        <div className="flex items-center justify-center w-full gap-3 p-4">
           {technologies.map((tech) => (
             <img
               key={tech.id}
