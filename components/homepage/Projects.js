@@ -5,6 +5,17 @@ import Image from "next/image"
 const projects = [
   {
     id: 1111,
+    image: "/assets/projects/imdb.png",
+    link: "https://cmdb-chi.vercel.app/",
+    technologies: [
+      "/assets/technologies/react.png",
+      "/assets/technologies/next.png",
+      "/assets/technologies/tw.png",
+      "/assets/technologies/headless.png",
+    ],
+  },
+  {
+    id: 1111,
     image: "/assets/projects/tidal.png",
     link: "https://next-wave-music.vercel.app/",
     technologies: [
